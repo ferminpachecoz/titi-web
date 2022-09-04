@@ -1,0 +1,31 @@
+.product-card-sm, .shadow-box{
+  background-size: cover;
+  border-radius: 5px;
+}
+.shadow-box:hover{
+  background-color: rgba(0, 0, 0, 0.664);
+}
+.product-card-sm button{
+  margin: 5px 5px;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.button-delete, .button-add{
+  display: none;
+}
+.show-none{
+  background-color: rgba(128, 128, 128, 0.747);
+}
+.product-card-sm:hover .button-delete{
+  background-color: rgb(255, 30, 30);
+  color: rgba(255, 255, 255, 0.801);
+  display: block;
+}
+.product-card-sm:hover .button-add{
+  background-color: rgba(0, 255, 0, 0.815);
+  color: rgba(255, 255, 255, 0.801);
+  display: block;
+}

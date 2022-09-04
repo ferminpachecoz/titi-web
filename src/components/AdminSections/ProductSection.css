@@ -1,0 +1,24 @@
+.all-products div {
+  height: 30vh;
+}
+.admin-product-container{
+  position: relative;
+  height: 100%;
+}
+.button{
+  width: 10em;
+  margin-bottom: 0.8em;
+  font-size: 0.9em;
+}
+@media (max-width: 576px){
+  .section-title{
+    font-size: 1.2em;
+  }
+  .btn-size-sm{
+    font-size: 0.6em;
+    font-weight: 600;
+  }
+  .all-products div{
+    height: 20vh;
+  }
+}

@@ -1,0 +1,20 @@
+.mod-container{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.63);
+  z-index: 2000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.mod-content{
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 100;
+  overflow: scroll;
+  height: 100%;
+}

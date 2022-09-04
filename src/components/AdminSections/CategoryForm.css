@@ -1,0 +1,80 @@
+.cat-container{
+  position: relative;
+  width: 50vw;
+  padding: 1em;
+}
+.category-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  position: relative;
+  background-image: linear-gradient(to right, #a2c5fe, #c2e9fc);
+  border-radius: 5px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.edit-button{
+  position: absolute;
+  bottom: 15%;
+  display: none;
+}
+.edit-button button{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+.delete-button{
+  position: absolute;
+  top: 15%;
+  display: none;
+}
+
+.delete-button button{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.8em;
+  background-color: red;
+}
+.category-box:hover .edit-button, .category-box:hover .delete-button{
+  display: block;
+}
+.form-edit-category{
+  display: none;
+}
+.form-edit-category .button{
+  font-size: 1em;
+}
+.form-edit-category input{
+  outline: none;
+  border-radius: 10px;
+  border: 1px solid rgb(75, 75, 75);
+  padding: 5px 10px;
+}
+.form-edit-category input:focus{
+  box-shadow: 1px 1px 2px #4fd3ff, 1px 1px 2px #4fd3ff inset;
+}
+
+@media (max-width: 576px){
+  .cat-container{
+    width: 90vw;
+  }
+}
+@media (max-width: 768px){
+  .cat-container{
+    width: 80vw;
+  }
+}
+@media (max-width: 992px){
+  .cat-container{
+    width: 70vw;
+  }
+}
+@media (max-width: 1200px){
+  .cat-container{
+    width: 60vw;
+  }
+}

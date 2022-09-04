@@ -1,0 +1,39 @@
+.map-container{
+  height: 80%;
+  height: 80vh;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.contact-information{
+  padding-right: 20%;
+  padding-left: 10%;
+}
+.info-icon{
+  font-size: 1.2em;
+}
+.info-contact{
+  border-right: 1px solid rgba(95, 95, 95, 0.795);
+}
+.contact-input{
+  margin-bottom: 1.5em;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid rgba(95, 95, 95, 0.795);
+  border-radius: 10px;
+}
+.contact-input:focus{
+  box-shadow: 1px 1px 3px #7EE8FA inset, 1px 1px 3px #7EE8FA;
+}
+.button-contact{
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.button-contact:hover{
+  border: none;
+  background: black;
+  color: white;
+  border: 2px solid black;
+}

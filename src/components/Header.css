@@ -1,0 +1,130 @@
+.header-container{
+  position: relative;
+}
+.logo-container{
+  position: relative;
+  z-index: 100;
+}
+.logo-container .logo{
+  width: 180px;
+  height: 80px;
+  background-size: cover;
+  background-position: 10% 50%;
+}
+.nav-icons{
+  position: absolute;
+  top: 35%;
+  right: 4%;
+}
+.nav-icons i{
+  margin-right: 15px;
+  font-size: 18px;
+  color: black;
+}
+.nav-container{
+  position: relative;
+  z-index: 15;
+}
+.nav-container a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 570;
+}
+.search-input{
+  width: 300px;
+  outline: none;
+  border: 1px solid rgb(77, 77, 77);
+  padding-left: 7px;
+  border-radius: 8px;
+}
+.search-input:focus{
+  outline: 1.5px solid #C2E9FC;
+}
+.nav-extended-container{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100vh;
+  padding-top: 8em;
+  background-color: white;
+  z-index: 1;
+  text-transform: uppercase;
+}
+.nav-extended-container p{
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.nav-extended-container a{
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.burger-menu{
+  display: none !important;
+  position: absolute;
+  top: 35%;
+  left: 4%;
+}
+.burger-menu a{
+  margin: 0px 7px;
+}
+.header-container .alpha{
+  position: absolute;
+  width: 100%;
+  z-index: 10000;
+}
+.header-container .alpha input{
+  width: 100%;
+  height: 100%;
+  font-size: 1.2em;
+  padding: 0.8em 0.6em;
+}
+
+.results{
+  width: 95%;
+  height: auto;
+  background-color: white;
+  border: 1px solid rgb(129, 129, 129);
+  border-top: none;
+  border-radius: 10px;
+}
+.results li{
+  list-style: none;
+  margin: 5px 0px;
+}
+.results li a{
+  width: 100%;
+  color: rgb(87, 87, 255);
+}
+
+.results-responsive{
+  background-color: white;
+  border: 1px solid rgb(129, 129, 129);
+  border-top: none;
+  padding: 8px 1.5em;
+}
+.results-responsive li{
+  list-style: none;
+  margin: 5px 0px;
+}
+.results-responsive li a{
+  width: 100%;
+  color: rgb(87, 87, 255);
+  font-size: 1.2em;
+}
+
+
+@media (max-width: 1000px) {
+  .nav-container{
+    display: none !important;
+  }
+  .display-none{
+    display: none !important ;
+  }
+  .burger-menu{
+    display: block !important;
+  }
+}
+

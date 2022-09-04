@@ -1,0 +1,25 @@
+.footer-container{
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+}
+.footer-logo img{
+  width: 15%;
+}
+.footer-nav a{
+  font-size: 0.8em;
+  font-weight: 300;
+  color: white;
+  text-decoration: none;
+}
+.footer-nav-title{
+  font-size: 1em;
+  font-weight: 600;
+}
+.footer-logo .logo{
+  width: 180px;
+  height: 80px;
+  background-size: cover;
+  background-position: 10% 50%;
+}
