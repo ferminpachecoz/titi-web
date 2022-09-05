@@ -17,7 +17,7 @@ export default function ProductSection() {
   }
 
   useEffect(()=>{
-    fetch('/products')
+    fetch('https://le-marche-server.herokuapp.com/products')
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error(err))

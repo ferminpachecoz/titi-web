@@ -20,7 +20,7 @@ export default function CardSm({click, product}) {
         },
         body: JSON.stringify(data)
       }
-      fetch('/delete', request)
+      fetch('https://le-marche-server.herokuapp.com/delete', request)
         .then(res => res.json())
         .then(data => setDeleted(data))
         .catch(err => console.error(err))

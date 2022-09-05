@@ -16,7 +16,7 @@ export default function LayoutHeader({category, notHeader, title, section}) {
         body: JSON.stringify({id: id, [section]: 1})
       }
       console.log(request)
-      fetch('/detail-category', request)
+      fetch('https://le-marche-server.herokuapp.com/detail-category', request)
         .then(res => res.json())
         .then(a =>{
           if(a.status === 1){
@@ -35,7 +35,7 @@ export default function LayoutHeader({category, notHeader, title, section}) {
         body: JSON.stringify({id: id, [section]: 0})
       }
       console.log(request);
-      fetch('/detail-category', request)
+      fetch('https://le-marche-server.herokuapp.com/detail-category', request)
         .then(res => res.json())
         .then(a =>{
           if(a.status === 1){

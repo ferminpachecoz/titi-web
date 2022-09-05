@@ -59,7 +59,7 @@ export default function CategoryForm({click}) {
       body: form
     }
 
-    fetch(`/${url}`, request)
+    fetch(`https://le-marche-server.herokuapp.com/${url}`, request)
       .then(res => res.json())
       .then(data => {
         if(data.status == 1){
@@ -70,7 +70,7 @@ export default function CategoryForm({click}) {
   }
 
   useEffect(()=>{
-    fetch('/category')
+    fetch('https://le-marche-server.herokuapp.com/category')
       .then(res => res.json())
       .then(data => setCategory(data))
       .catch(err => console.error(err))
@@ -92,7 +92,7 @@ export default function CategoryForm({click}) {
         },
         body: JSON.stringify({id: id_category})
       }
-      fetch("/delete-category", request)
+      fetch("https://le-marche-server.herokuapp.com/delete-category", request)
         .then(res => res.json())
         .then(a => console.log(a))
         .catch(err => console.error(err))

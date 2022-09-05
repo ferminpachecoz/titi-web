@@ -9,7 +9,7 @@ export default function Box({tab}) {
   const [notHeader, setNotHeader] = useState([]);
   const [notBanner, setNotBanner] = useState([])
   useEffect(()=>{
-    fetch('/category')
+    fetch('https://le-marche-server.herokuapp.com/category')
       .then(res => res.json())
       .then(data =>{
         if(data){

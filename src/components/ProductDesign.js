@@ -50,7 +50,7 @@ export default function ProductDesign() {
   }
 
   useEffect(()=>{
-    fetch(`/product/${id}`)
+    fetch(`https://le-marche-server.herokuapp.com/product/${id}`)
       .then(res => res.json())
       .then(data => setProduct(data))
       .catch(err => console.error(err))

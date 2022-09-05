@@ -40,14 +40,14 @@ export default function ProductForm({click, title, btn, purl, selected}) {
         body: JSON.stringify(data)
       }
   
-      fetch('/edit/selected', reqData)
+      fetch('https://le-marche-server.herokuapp.com/edit/selected', reqData)
         .then(res => res.json())
         .then(data => setSProduct(data))
         .catch(err => console.error(err))
     }
   },[])
   useEffect(()=>{
-    fetch('/category')
+    fetch('https://le-marche-server.herokuapp.com/category')
       .then(res => res.json())
       .then(data => setAllCategory(data))
       .catch(err => console.error(err))
@@ -87,7 +87,7 @@ export default function ProductForm({click, title, btn, purl, selected}) {
       method:"POST",
       body: data
     }
-    fetch(`/${purl}`, request)
+    fetch(`https://le-marche-server.herokuapp.com/${purl}`, request)
       .then(res => res.json())
       .then(a => a.status?setSuccess(true):console.log(a))
       .catch(err => console.error(err))
