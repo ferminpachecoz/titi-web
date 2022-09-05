@@ -48,7 +48,7 @@ export default function CartSection() {
       },
       body: JSON.stringify(data)
     }
-    fetch('https://le-marche-server.herokuapp.com/payment/create', request)
+    fetch('https://lm-serverless.herokuapp.com/payment/create', request)
       .then(res => res.json())
       .then(a => {
         if(a.init_point){

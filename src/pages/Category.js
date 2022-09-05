@@ -21,7 +21,7 @@ export default function Category() {
   let category = query.get('id')
 
   useEffect(()=>{
-    fetch('https://le-marche-server.herokuapp.com/products')
+    fetch('https://lm-serverless.herokuapp.com/products')
       .then(res => res.json())
       .then(a => {
         if(a.length > 0){
@@ -33,7 +33,7 @@ export default function Category() {
       })
       .catch(err => console.error)
 
-      fetch('https://le-marche-server.herokuapp.com/category')
+      fetch('https://lm-serverless.herokuapp.com/category')
         .then(res => res.json())
         .then(data =>{
           let x = data.filter(item=>{

@@ -7,7 +7,7 @@ function Home() {
   const [category, setCategory] = useState([]);
 
   useEffect(()=>{
-    fetch('https://le-marche-server.herokuapp.com/category')
+    fetch('https://lm-serverless.herokuapp.com/category')
       .then(res => res.json())
       .then(data =>{
         if(data.length > 0){

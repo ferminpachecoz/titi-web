@@ -23,7 +23,7 @@ export default function LoginSection() {
       body: JSON.stringify(data)
     }
 
-    fetch('https://le-marche-server.herokuapp.com/users/create', request)
+    fetch('https://lm-serverless.herokuapp.com/users/create', request)
       .then(res => res.json())
       .then(data =>{
         if(data && data.email && data.password){

@@ -15,7 +15,7 @@ export default function Header() {
   let x = JSON.parse(sessionStorage.getItem("products"))
   console.log(query);
   useEffect(()=>{
-    fetch('https://le-marche-server.herokuapp.com/category')
+    fetch('https://lm-serverless.herokuapp.com/category')
       .then(res => res.json())
       .then(data =>{
         if(data.length > 0){
@@ -32,7 +32,7 @@ export default function Header() {
   },[])
 
   const handleChange = data =>{
-    fetch(`https://le-marche-server.herokuapp.com/search?query=${data}`)
+    fetch(`https://lm-serverless.herokuapp.com/search?query=${data}`)
       .then(res => res.json())
       .then(a => setQuery(a))
       .catch(err => console.error(err))

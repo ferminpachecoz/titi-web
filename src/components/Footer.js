@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 export default function Footer() {
   const [category, setCategory] = useState([])
   useEffect(()=>{
-    fetch('https://le-marche-server.herokuapp.com/category')
+    fetch('https://lm-serverless.herokuapp.com/category')
       .then(res => res.json())
       .then(a => setCategory(a))
       .catch(err => console.error(err))
